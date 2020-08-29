@@ -8,9 +8,9 @@ function Character({ character }) {
     return (
         
         
-        <DivStyle>
-            <PStyle>{character.name} <YearStyle>{character.birth_year}</YearStyle></PStyle>
-
+        <DivStyle> 
+            <PStyle>{character.name}<YearStyle> Birth Year: {character.birth_year} </YearStyle></PStyle>
+           
         </DivStyle>
     )
 }
@@ -19,25 +19,49 @@ export default Character
 
 const DivStyle = styled.div`
 background-color: black;
-border: solid 1px green;
-height: 4em;
+border: solid 2px green;
+height: 5em;
 align-items: center;
 justify-content: space-between;
 margin: 5px;
+border-radius: 10px;
+padding: 5px;
+
 
 `
 
 const PStyle = styled.div`
-font-size: 2em;
+font-size: 1.6em;
 justify-content: space-between;
-margin: 3px;
-`
+margin: 15px;
+padding: 3px;
+
+&:hover {
+color: black;
+border: 4px solid #0d0046;
+background-color: #FFF;
+box-shadow:0px 0px 0px 4px #EEE inset;
+}`
 
 const YearStyle = styled.span`
 background-color: white;
-color: black;
 border-radius: 10px;
-padding: 2px;
-margin: 3px;
+padding: 4px;
+margin: 5px;
+color: #FFF;
+    border: 4px solid #0d0046;
+    box-shadow:0px 0px 0px 1px #0d0046 inset;
+    background-color: #0d0046;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 
+    &:hover {
+        color: black;
+        border: 4px solid #0d0046;
+background-color: #FFF;
+box-shadow:0px 0px 0px 4px #EEE inset;
+    }
 `
+
+

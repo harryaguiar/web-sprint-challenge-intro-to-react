@@ -47,8 +47,10 @@ export default App;
 
 const PAppStyle = styled.div`
 display: flex;
+flex: wrap;
 justify-content: space-evenly;
+align-items: center;
 width: 100%;
-font-family: ;
+font-family: Arial;
 color: white;
 `
