@@ -59,7 +59,7 @@ color: #FFF;
     &:hover {
         color: black;
         border: 4px solid #0d0046;
-background-color: #FFF;
+background-color: #BBB;
 box-shadow:0px 0px 0px 4px #EEE inset;
     }
 `
